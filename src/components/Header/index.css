@@ -95,20 +95,6 @@
   }
 }
 
-.nav-menu-list-mobile {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 70px;
-  background-color: #e6f6ff;
-  flex: 1;
-  list-style-type: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-
 .nav-menu-item {
   font-family: 'Roboto';
   margin: 10px;
