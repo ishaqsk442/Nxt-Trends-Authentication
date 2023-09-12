@@ -1,20 +1,37 @@
 /* Write your CSS code here */
 .home-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding-top: 10px;
-  padding-bottom: 50px;
-  width: 90%;
+  align-items: center; */
+  /* margin: auto; */
+  /* background-image: linear-gradient(
+    to right,
+    white,
+    white,
+    white,
+    rgb(113, 214, 240)
+  ); */
+  background-color: white;
+  padding: 20px;
+  /* padding-top: 10px;
+  padding-bottom: 50px; */
+  width: 100%;
   max-width: 1110px;
 }
 @media screen and (min-width: 768px) {
   .home-container {
     flex-direction: row;
     justify-content: space-between;
+    background-image: linear-gradient(
+      to right,
+      white,
+      white,
+      white,
+      rgb(113, 214, 240)
+    );
     padding-top: 50px;
+    max-width: 100%;
   }
 }
 .home-content {
@@ -32,6 +49,20 @@
 }
 @media screen and (min-width: 768px) {
   .home-mobile-img {
+    display: none;
+  }
+}
+
+.tabs-cont {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 0px;
+  width: 100%;
+  border-bottom: #7b8794;
+}
+
+@media screen and (min-width: 768px) {
+  .tabs-cont {
     display: none;
   }
 }
@@ -102,4 +133,139 @@
     width: 150px;
     font-size: 16px;
   }
+}
+.basic-card {
+  border: #27f394;
+  border-radius: 20px;
+  border-style: solid;
+  background-color: white;
+}
+
+.desk-basic-card {
+  margin: 10px;
+  border: #27f394;
+  border-radius: 20px;
+  border-style: solid;
+  background-color: white;
+}
+
+.desk-basic-card:hover {
+  border: #fd9712;
+  border-radius: 20px;
+  border-style: solid;
+}
+
+@media screen and (min-width: 768px) {
+  .basic-card {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-cards {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .desktop-cards {
+    display: none;
+  }
+}
+.amount-head {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.discount-20 {
+  background-color: #b0eed4;
+  padding: 10px;
+  border-top: 2px solid #0ba14a;
+  border-bottom: 2px solid #0ba14a;
+  text-align: center;
+}
+.more-features {
+  list-style-type: none;
+}
+.tick {
+  color: #27f394;
+}
+.features-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.features-para {
+  font-weight: 600;
+  font-size: bold;
+  margin-left: 10px;
+}
+.features-head {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.try-for-free {
+  background-color: black;
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  align-self: center;
+}
+
+.desk-try-for-free {
+  background-color: black;
+  padding: 10px;
+  /* align-self: center; */
+  width: 200px;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  align-self: center;
+}
+
+.button-center {
+  text-align: center;
+}
+.desktop-cards-cont {
+  display: flex;
+  flex-direction: column;
+}
+.payment-cont {
+  padding: 2px;
+  padding-left: 0px;
+  border-radius: 10px;
+  align-self: center;
+  list-style-type: none;
+  border: 2px solid rgb(26, 199, 184);
+  display: flex;
+  flex-direction: row;
+}
+.pay-monthly {
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-top: 3px;
+  border-radius: 10px;
+  margin-left: 0px;
+  background-color: black;
+  color: white;
+  margin-right: 6px;
+}
+
+.pay-yearly {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px;
+}
+.desktop-inner-cards-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }

@@ -2,6 +2,10 @@
 .nav-header {
   display: flex;
   justify-content: space-around;
+  border-bottom: 2px;
+  border-bottom-color: grey;
+  border-bottom-style: solid;
+  height: 70px;
 }
 
 @media screen and (max-width: 767px) {
@@ -28,7 +32,13 @@
     padding-right: 15px;
   }
 }
+.logo-list {
+  justify-content: center;
+  align-items: center;
 
+  display: flex;
+  flex-direction: row;
+}
 .nav-bar-mobile-logo-container {
   display: flex;
   justify-content: space-between;
@@ -49,22 +59,24 @@
 
 .website-logo {
   width: 120px;
+  height: 50px;
 }
 
 @media screen and (min-width: 768px) {
   .website-logo {
-    width: 165px;
+    width: 150px;
+    height: 60px;
   }
 }
 .nav-menu {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  align-self: flex-end;
-  flex: 1;
+  justify-content: center;
+  align-self: center;
+  /* flex: 1; */
   list-style-type: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  /* margin-top: 0px;
+  margin-bottom: 0px; */
 }
 
 @media screen and (max-width: 767px) {
@@ -103,29 +115,59 @@
   font-weight: 400;
   font-size: 16px;
   color: #475569;
+  border: none;
+  outline: none;
 }
 
 .nav-menu-item-mobile {
   margin: 0px;
   cursor: pointer;
 }
-
-.logout-desktop-btn {
-  font-family: 'Roboto';
+.Link {
+  color: black;
+  font-size: 20px;
   font-weight: 600;
-  font-size: 10px;
-  padding: 8px 16px;
-  color: #ffffff;
-  background-color: #0967d2;
-  border: none;
-  border-radius: 4px;
+  margin-right: 10px;
+}
+.login-desktop-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  /* padding: 8px 16px; */
+
+  /* border: none; */
+  /* border-radius: 4px; */
   margin-left: 14px;
+
+  list-style-type: none;
+}
+
+.login-button-option {
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
   outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.free-trail-desktop-btn {
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: black;
 }
 
 @media screen and (max-width: 767px) {
-  .logout-desktop-btn {
+  .login-desktop-btn {
     display: none;
   }
 }
@@ -143,7 +185,14 @@
     display: none;
   }
 }
-
+.link-login-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* align-items: baseline; */
+}
 .nav-bar-img {
-  width: 24px;
+  width: 70px;
+  height: 50px;
 }

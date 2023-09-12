@@ -1,5 +1,6 @@
 // Write your JS code here
 import './index.css'
+import {FiMenu} from 'react-icons/fi'
 
 const Header = () => (
   <nav className="nav-header">
@@ -7,60 +8,55 @@ const Header = () => (
       <div className="nav-bar-mobile-logo-container">
         <img
           className="website-logo"
-          src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
+          src="https://www.logosvgpng.com/wp-content/uploads/2018/03/shopify-logo-vector.png"
           alt="website logo"
         />
-        <button type="button" className="nav-mobile-btn">
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-log-out-img.png"
-            alt="nav logout"
-            className="nav-bar-img"
-          />
-        </button>
+        <div className="link-login-cont">
+          <div>
+            <a className="Link" href="start free trail">
+              start free trail
+            </a>
+          </div>
+          <div>
+            <button type="button" className="nav-mobile-btn">
+              <FiMenu className="nav-bar-img" />
+            </button>
+          </div>
+        </div>
       </div>
 
       <div className="nav-content nav-bar-large-container">
-        <img
-          className="website-logo"
-          src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-          alt="website logo"
-        />
-        <ul className="nav-menu">
-          <li className="nav-menu-item">Home</li>
-          <li className="nav-menu-item">Products</li>
-          <li className="nav-menu-item">Cart</li>
+        <div className="logo-list">
+          <img
+            className="website-logo"
+            src="https://www.logosvgpng.com/wp-content/uploads/2018/03/shopify-logo-vector.png"
+            alt="website logo"
+          />
+          <div className="nav-menu">
+            <select className="nav-menu-item">
+              <option>Solutions</option>
+            </select>
+
+            <p className="nav-menu-item">Pricing</p>
+
+            <select className="nav-menu-item">
+              <option>Solutions</option>
+            </select>
+          </div>
+        </div>
+        <ul className="login-desktop-btn">
+          <li>
+            <button type="button" className="login-button-option">
+              Login
+            </button>
+          </li>
+          <li>
+            <button type="button" className="free-trail-desktop-btn">
+              Start Free rail
+            </button>
+          </li>
         </ul>
-        <button type="button" className="logout-desktop-btn">
-          Logout
-        </button>
       </div>
-    </div>
-    <div className="nav-menu-mobile">
-      <ul className="nav-menu-list-mobile">
-        <li className="nav-menu-item-mobile">
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png"
-            alt="nav home"
-            className="nav-bar-img"
-          />
-        </li>
-
-        <li className="nav-menu-item-mobile">
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png"
-            alt="nav products"
-            className="nav-bar-img"
-          />
-        </li>
-
-        <li className="nav-menu-item-mobile">
-          <img
-            src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
-            alt="nav cart"
-            className="nav-bar-img"
-          />
-        </li>
-      </ul>
     </div>
   </nav>
 )

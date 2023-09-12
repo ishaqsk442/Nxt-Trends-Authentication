@@ -1,0 +1,26 @@
+/* Write your CSS here */
+.tab-head {
+  outline: none;
+  cursor: pointer;
+  color: black;
+  font-size: 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #dfe2e5;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 4px;
+  background-color: transparent;
+}
+
+.selected-tab {
+  color: black;
+  font-weight: 600;
+  border-bottom: #27f394;
+  border-bottom-style: solid;
+}
+.tabs-cont {
+  list-style-type: none;
+}
